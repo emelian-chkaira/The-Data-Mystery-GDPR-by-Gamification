@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 30% 6%;
+    --foreground: 180 10% 90%;
+
+    --card: 210 25% 10%;
+    --card-foreground: 180 10% 90%;
+
+    --popover: 210 25% 10%;
+    --popover-foreground: 180 10% 90%;
+
+    --primary: 175 70% 45%;
+    --primary-foreground: 210 30% 6%;
+
+    --secondary: 210 20% 16%;
+    --secondary-foreground: 180 10% 80%;
+
+    --muted: 210 20% 14%;
+    --muted-foreground: 210 10% 50%;
+
+    --accent: 45 90% 55%;
+    --accent-foreground: 210 30% 6%;
+
+    --destructive: 0 70% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 20% 18%;
+    --input: 210 20% 18%;
+    --ring: 175 70% 45%;
+
+    --radius: 0.75rem;
+
+    /* Game-specific tokens */
+    --card-health: 175 60% 40%;
+    --card-biometric: 280 50% 50%;
+    --card-genetic: 340 60% 50%;
+    --card-political: 45 70% 50%;
+    --card-exception: 120 50% 40%;
+    --card-dpia: 210 70% 50%;
+    --card-action: 15 80% 55%;
+    --card-glow: 175 70% 45%;
+
+    --sidebar-background: 210 25% 10%;
+    --sidebar-foreground: 180 10% 90%;
+    --sidebar-primary: 175 70% 45%;
+    --sidebar-primary-foreground: 210 30% 6%;
+    --sidebar-accent: 210 20% 16%;
+    --sidebar-accent-foreground: 180 10% 80%;
+    --sidebar-border: 210 20% 18%;
+    --sidebar-ring: 175 70% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+
+  code, .mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+@layer utilities {
+  .card-glow {
+    box-shadow: 0 0 20px -5px hsl(var(--card-glow) / 0.4),
+                0 0 40px -10px hsl(var(--card-glow) / 0.2);
+  }
+
+  .card-glow-health {
+    box-shadow: 0 0 20px -5px hsl(var(--card-health) / 0.5);
+  }
+
+  .card-glow-biometric {
+    box-shadow: 0 0 20px -5px hsl(var(--card-biometric) / 0.5);
+  }
+
+  .card-glow-genetic {
+    box-shadow: 0 0 20px -5px hsl(var(--card-genetic) / 0.5);
+  }
+
+  .card-glow-political {
+    box-shadow: 0 0 20px -5px hsl(var(--card-political) / 0.5);
+  }
+
+  .card-glow-exception {
+    box-shadow: 0 0 20px -5px hsl(var(--card-exception) / 0.5);
+  }
+
+  .card-glow-dpia {
+    box-shadow: 0 0 20px -5px hsl(var(--card-dpia) / 0.5);
+  }
+
+  .card-glow-action {
+    box-shadow: 0 0 20px -5px hsl(var(--card-action) / 0.5);
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
+  }
+
+  .bg-mystery {
+    background: radial-gradient(ellipse at top center, hsl(210 30% 12%) 0%, hsl(210 30% 6%) 70%);
+  }
+}
