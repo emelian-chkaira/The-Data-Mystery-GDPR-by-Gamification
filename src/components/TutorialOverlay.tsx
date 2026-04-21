@@ -65,8 +65,8 @@ export function TutorialOverlay({
 
           {/* Action instruction */}
           <div className="flex items-start gap-2 p-2.5 rounded-lg bg-primary/10 border border-primary/20">
-            <MousePointerClick className="w-4 h-4 text-primary shrink-0 mt-0.5" />
-            <span className="text-xs font-medium text-primary-foreground/80">
+            <MousePointerClick className="w-4 h-4 text-white shrink-0 mt-0.5" />
+            <span className="text-xs font-medium text-white">
               {step.action}
             </span>
           </div>
