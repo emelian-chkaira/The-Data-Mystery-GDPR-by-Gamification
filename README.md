@@ -1,6 +1,6 @@
 # THE DATA MYSTERY
 
-An educational GDPR Article 9 card game where legal reasoning becomes strategy.
+GDPR Article 9 says sensitive personal data cannot be processed unless a valid legal exception applies; in this game, you will build lawful Data Sets by matching Sensitive Data cards with the right Exception Keys and adding DPIA for high-risk cases.
 
 ## 🚀 Live
 - **Play now:** https://candid-valkyrie-10dcc5.netlify.app
@@ -60,14 +60,6 @@ npm run preview
 ## ✅ Test
 ```bash
 npm run test
-```
-
-## 🌐 Netlify
-- Build command: `npm run build`
-- Publish directory: `dist`
-- SPA redirect file (`public/_redirects`):
-```text
-/* /index.html 200
 ```
 
 ## 👤 Author
