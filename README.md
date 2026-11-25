@@ -3,7 +3,8 @@
 GDPR Article 9 says sensitive personal data cannot be processed unless a valid legal exception applies; in this game, you will build lawful Data Sets by matching Sensitive Data cards with the right Exception Keys and adding DPIA for high-risk cases.
 
 ## 🚀 Live
-- **Play now:** https://candid-valkyrie-10dcc5.netlify.app
+- **Play now:** https://candid-valkyrie-10dcc5.netlify.app (hosted on Netlify)
+- **Portfolio website:** https://emelianchkaira.netlify.app
 
 ## 🎯 What It Is
 - A 1v1 card game: **You vs AI**
